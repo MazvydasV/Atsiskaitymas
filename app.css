@@ -39,32 +39,50 @@ header .header-title {
 .button:hover {
     background-color: rgb(61, 89, 180);
 }
-top {
-    margin-top: 50px;
-    background-color: coral;
+.top {
     display: flex;
-    
     justify-content: center;
     align-items: center;
-    padding: 100px;
-    width: 400px;
-    margin: auto;
-    
-    
-}
-img {
+    background: pink;
+    margin-top: 51px;
     position: relative;
-    width: auto;
-    height: auto;
-    display: block;
-    object-fit: cover;
-    
+    padding: 100px 0;
 }
-.content {
+.top .ocean-image {
     position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    
-    
+    /* position: naudojami tam kad elementas esantis elemente neislystu is jo ribu
+    Teviniam (pagrindinis elementas kuriame bus kitas elementas) elementui reikia uzmesti positio:relative ,o jo vaikui position: absolute */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: cover naudojamas tam, kad background nuotrauka neiislystu is remu */
+    pointer-events: none; 
+    /* pointer-events: none neleidzia pazymeti ir nukopijuoti nuotrauku pvz */
 }
+.top:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    z-index: 1;
+}
+.top .content {
+    position: relative;
+    z-index: 1;
+}
+.top .content h1 {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    max-width: 670px;
+    width: 100%;
+}
+
+    
+    
