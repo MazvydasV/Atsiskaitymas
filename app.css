@@ -83,6 +83,82 @@ header .header-title {
     max-width: 670px;
     width: 100%;
 }
+.button-top {
+    background-color: rgb(31, 125, 187);
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3 ease-in-out;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+input {
+    padding: 8px 30px;
+    margin-left: 200px;
+}
+.icons {
+    
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin-top: 51px;
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    display: flex;
+
+}
+.varnele {
+    width: 50x;
+    height: 50px;
+    
+}
+.veidukas {
+    width: 50px;
+    height: 50px;
+    
+}
+.kompas {
+    width: 50px;
+    height: 50px;
+    
+}
+.align {
+    margin: 15px;
+}
+p {
+    color: grey;
+}
+.about {
+    align-items: center;
+    background: white;
+    margin-top: 51px;
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    max-width: auto;
+
+}
+.phone {
+    float: right;
+}
+.kid {
+    float: right;
+}
+.matrix {
+    float: left;
+}
+.right {
+    float: right;
+    
+}
+.left {
+    float: left;
+    
+}
 
     
     
